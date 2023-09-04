@@ -17,7 +17,7 @@ import os
 #     exit(1)
 # else:
 #     print("OPENAI_API_KEY is set")
-
+ 
 ########## Remeber: enable this for PROD
 os.environ["OPENAI_API_KEY"] = os.environ.get('OPENAI_API_KEY')
 if os.environ("OPENAI_API_KEY") is None or os.environ("OPENAI_API_KEY") == "":
@@ -57,5 +57,5 @@ submit = st.button('Generate')
 if submit:
     response = load_answer(user_input)
     st.subheader("Answer:")
-    st.write(response,key= 1)
+    st.write(response)
 
