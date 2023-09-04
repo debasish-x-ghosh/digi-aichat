@@ -18,8 +18,9 @@ import os
 #     print("OPENAI_API_KEY is set")
  
 ########## Remeber: enable this for PROD
-os.environ["OPENAI_API_KEY"] = os.environ.get('OPENAI_API_KEY')
-if os.environ("OPENAI_API_KEY") is None or os.environ("OPENAI_API_KEY") == "":
+env_var = os.environ
+key_value = env_var("OPENAI_API_KEY") 
+if key_value is None or key_value == "":
     print("OPENAI_API_KEY is not set")
     exit(1)
 else:
