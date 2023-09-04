@@ -26,7 +26,7 @@ else:
     print("OPENAI_API_KEY is set")
 
 # From here down is all the StreamLit UI.
-st.set_page_config(page_title="LangChain Demo", page_icon=":robot:")
+st.set_page_config(page_title="DIGI-chatGPT", page_icon=":robot:")
 st.header("Hey, this is your DIGI-chatGPT")
 
 if "sessionMessages" not in st.session_state:
