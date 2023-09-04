@@ -27,7 +27,7 @@ else:
 
 # From here down is all the StreamLit UI.
 st.set_page_config(page_title="LangChain Demo", page_icon=":robot:")
-st.header("Hey, I'm your Chat GPT")
+st.header("Hey, this is your DIGI-chatGPT")
 
 if "sessionMessages" not in st.session_state:
      st.session_state.sessionMessages = [
@@ -51,7 +51,7 @@ chat = ChatOpenAI(temperature=0)
 
 
 user_input=get_text()
-submit = st.button('Generate')  
+submit = st.button('see answer')  
 
 if submit:
     response = load_answer(user_input)
